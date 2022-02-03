@@ -5,7 +5,7 @@ Console.WriteLine("Welcome to functional problem statement!");
 
 
 {
-    Console.WriteLine("Enter\n0 for Exit\n" + "1 for flip Coin \n");
+    Console.WriteLine("Enter 0 for Exit\n" + "Enter 1 for flip Coin problem \n"+"Enter 2 for Leap year problem\n");
     Console.WriteLine("Enter your option: ");
     int option = Convert.ToInt32(Console.ReadLine() + "\n");
 
@@ -18,6 +18,10 @@ Console.WriteLine("Welcome to functional problem statement!");
         case 1:
             CoinToss coin = new CoinToss();
             coin.toss();
+            break;
+        case 2:
+            LeapYear leap=new LeapYear();
+            leap.year();
             break;
 
     }
