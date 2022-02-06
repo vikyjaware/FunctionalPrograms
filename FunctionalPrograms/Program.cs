@@ -9,7 +9,8 @@ Console.WriteLine("Welcome to functional problem statement!");
         +"Enter 1 for flip Coin \n"
         +"Enter 2 for Leap year \n"
         +"Enter 3 for Power of 2 series\n"
-        +"Enter 4 for Harmonic number\n");
+        +"Enter 4 for Harmonic number\n"
+        +"Enter 5 for Prime Factors\n");
     Console.WriteLine("Enter your option: ");
     int option = Convert.ToInt32(Console.ReadLine() + "\n");
 
@@ -34,6 +35,10 @@ Console.WriteLine("Welcome to functional problem statement!");
         case 4:
             HarmonicNum harmonicNum=new HarmonicNum();
             harmonicNum.harmonic();
+            break;
+        case 5:
+            PrimeFactors primeFactors=new PrimeFactors();
+            primeFactors.factor();
             break;
 
     }
